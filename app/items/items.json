@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "isChecked": false,
+    "name": "Milk"
+  },
+  {
+    "id": 1,
+    "isChecked": false,
+    "name": "Bread"
+  },
+  {
+    "id": 2,
+    "isChecked": true,
+    "name": "Butter"
+  },
+  {
+    "id": 3,
+    "isChecked": false,
+    "name": "Apples"
+  }
+]

@@ -1,0 +1,23 @@
+<h1>Shopping list</h1>
+<div>
+    <ul class="list-unstyled">
+        <li ng-repeat="(index, item) in $ctrl.items | orderBy: ['isChecked', 'name']">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="item.isChecked" name="checkbox">
+                    <span ng-class="{'strikethrough' : item.isChecked}">{{item.name}}</span>
+                </label>
+                <button type="button" class="close" ng-click="$ctrl.deleteItem(item)">&times;</button>
+            </div>
+        </li>
+    </ul>
+</div>
+<div>
+    <form ng-submit="$ctrl.createItem($ctrl.newItem)">
+        <div class="form-group">
+            <input type="text" ng-model="$ctrl.newItem.name" placeholder="Enter name" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <button type="button" ng-click="$ctrl.resetCreateForm()" class="btn btn-default">Cancel</button>
+    </form>
+</div>

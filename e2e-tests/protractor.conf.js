@@ -17,6 +17,10 @@ exports.config = {
 
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
-  }
+  },
+
+  chromeOnly: true,
+
+  directConnect: true
 
 };
