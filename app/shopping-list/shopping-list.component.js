@@ -13,7 +13,7 @@ component('shoppingList', {
             vm.resetCreateForm = function() {
                 vm.newItem = {
                     name: '',
-                    isActive: true
+                    isChecked: false
                 }
             };
             vm.createItem = function(item) {
