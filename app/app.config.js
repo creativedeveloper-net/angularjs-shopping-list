@@ -7,9 +7,9 @@ config(['$locationProvider' ,'$routeProvider',
         $locationProvider.hashPrefix('!');
 
         $routeProvider.
-            when('/items', {
+            when('/', {
                 template: '<shopping-list></shopping-list>'
             }).
-            otherwise('/items');
+            otherwise('/');
     }
 ]);
